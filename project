@@ -1,0 +1,52 @@
+#include <iostream>
+
+void clearConsole() {
+    printf("Консоль стандартными средставми языка с++ не может быть очищена.\n");
+}
+
+void changeConsoleBG() {
+    printf("Консоль стандартными средставми языка с++ не может быть покрашена.\n");
+}
+
+void changeConsoleTextColor() {
+    printf("\x1B[36m");
+    printf("*Покрашено*");
+}
+int getInt() {
+    return 4;
+}
+int getChar() {
+    return 1;
+}
+int getDouble(){
+    return 8;
+}
+int getFloat() {
+    return 4;
+}
+int getBooleanSize() {
+    return 1;
+}
+void printTestMessage() {
+    printf("Hello world!\n");
+}
+void printSquare() {
+    printf("#####\n");
+    printf("#####\n");
+    printf("#####\n");
+    printf("#####\n");
+    printf("#####\n");
+}
+int main() {
+    clearConsole();
+    changeConsoleBG();
+    changeConsoleTextColor();
+    printf("\nInt: %i",getInt());
+    printf("\nChar: %i",getChar());
+    printf("\nDouble: %i",getDouble());
+    printf("\nFloat: %i",getFloat());
+    printf("\nBool: %i\n",getBooleanSize());
+    printTestMessage();
+    printSquare();
+    return 0;
+}
